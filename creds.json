@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "axial-journal-287012",
+  "private_key_id": "1cd69bdd725667443396356b6262f51ca3aff292",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDBpJd+3M/9EZWt\nvMsNaBxi/uXo83HD+ArvgXTunf1RUgQ/Jhpc/eJuRWukBhRfraNr1stTzcFW1pJE\noYwpd9Ali42nEZ8Emw4578F3lAzMDYKk6VcrxVvQz4R6rTSK46ZMxqulpMexiDgY\nkttT/XEfnfayX4Cp4RwEU41SN/1lWMkK+a2rsCd8zlDFQyaxHl48G4OdFUBHQQNR\nf/6W0fvcrzSfQCCJr/ES7hf/09tPhbxfpJkVe5O5CxmCqJzCGMR0hcEwgngMPC9q\nxu1U9g6VApvmaFhZMIaBNq9bj+EU9bTE98ZNx4QSkcCd21pJwUV9wnm8itdAr9G6\nqAP/CyCNAgMBAAECggEADCrFyGBrwt46/PqlHdCtj+7SMxUMPenZhOkFTuBeKMV7\nNfiP7hJy5jRIc004NH/1igTzK6XYJWBAFfS6T7AlaGaFFQQj/5TM1QkZYi2mjDIB\nH5mKV6NNGARrH49Rp7RuaUe0H+Ash/i2Ki9lxpPzIYq6E+mxI8SToag+4WM1zS/c\nwuiyQm7HyqxnhdlH0ivwYadTq2//Ug3rcqyvJjpX5fyJULFkf/KCXehhzUa2u7+n\nO+fkzxBadnb6szmbtvwDtQJd1zTWNZOiftt5+NaQBosu7W89/cGnNYH/aV5//8Su\nob0/TexXLf65roFwqnOzIjrkK2U6mOgiQ31y9GRcBQKBgQDviQyNbC+M4Qwvpdnv\nREL3qtXttAboUMBPuQDFIM6GPKFxf/Edkf9AAzm/v6ta9zmp1hmpYyBCnongqHCu\n1IATTehVMSA0OlMa9+53qevfXjkOqOrbo5OIvXClcooGee0JeopoTqqddzmS/MkI\nwnDGH4gYUs8yrBc7NNRWrzAL1wKBgQDO9ADSpSmpN2XOYz1q0/k70i9Knxr6kvce\nXSLGAJLdarRBtZHZJs3ma5G55xVcn2lPcfbQ4/mC27tUjIrSOfS2GJ9bwPpkNeeM\nPi6QfMw6mhn32NRIeG0ftR2ctgqgerehTwkB03CHSngt8YTCc1p869Y/PPlFFOI2\nFCpmlU4KOwKBgGaty9ivoG52Zd/i61naXA6Ih62edzuMqfNCrabS2lTGlrntizEO\nzWjmORIOGmkjAu/fnB51JHYKObY43hzDcKdVxRsHtPNOcSNlVi6rgzW70R+MnyhJ\npUt/UVNKlwoRp99hTQVLe22GlwKAI7kCiI8VIySyEql5BXhWvBLwg9r/AoGAfxHz\nL2OaIPyS1ha5L07YSZLU1sy6lACJG2u0Xj8b7jgGVhJWay8YXdLOt4bb5vM6hj1D\nfx97pI2miFODKXHMf8K+lmf3VnCCq+nCTZVTEOht6XCJZ7YJyt46QG7GN6Mh/Tm6\nHhTlkyx2fj89dOe/N9TWyB14MKKSAwJ+xl4GfOECgYEAozT9HGNAbiYxrODoaDhl\nxvMUTVsTkHiF1t3K4oHQ6ruHY/qNYeD0XjHRd1ClKNReJdgfJOAmu6sRZlkGzxKZ\n6t0XUM1mY6xxPkBcvpeC1gE0zH++f5q6H6HXR5OIoYLYRUXCEzknO2oBff3T97Hm\nwmcpMRAA39VNmJKEg2clfWY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "test-account@axial-journal-287012.iam.gserviceaccount.com",
+  "client_id": "106201958067216266205",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/test-account%40axial-journal-287012.iam.gserviceaccount.com"
+}
