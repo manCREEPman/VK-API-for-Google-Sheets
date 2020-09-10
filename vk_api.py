@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 #!/usr/bin/env python
 # coding: utf-8
 
 # In[1]:
 
 
+=======
+>>>>>>> 1e3aa97e85c1057f4f3d23d9edc7ab2446a1531f
 # ----------------------------------------------------------------------
 # Бот для сообщества VK
 # ----------------------------------------------------------------------
@@ -13,12 +16,15 @@ import random
 import re
 from pprint import pprint
 
+<<<<<<< HEAD
 from Google_Tabs1 import *
 
 
 # In[2]:
 
 
+=======
+>>>>>>> 1e3aa97e85c1057f4f3d23d9edc7ab2446a1531f
 '''
 1. Глобальные переменные
     
@@ -34,11 +40,14 @@ api_version = '5.103'
 group_id = '195146403'
 token = '40a528ce3bfe53f37a917eb0231bd79b2d073dbe026edf775530221432c7a9ffd85e879077d24bfc8dd37'
 
+<<<<<<< HEAD
 day = 2
 
 
 # In[3]:
 
+=======
+>>>>>>> 1e3aa97e85c1057f4f3d23d9edc7ab2446a1531f
 
 '''
 2. Функции
@@ -94,12 +103,20 @@ def pack_parameters(param):
     :return: Список параметров
     """
     if param:
+<<<<<<< HEAD
         if len(param) > 1:
             params = []
             for item in param[0]:
                 params.append(item)
             return params
         return param
+=======
+        params = []
+        params_length = len(param[0])
+        for i in range(params_length):
+            params.append(param[0][i])
+        return params
+>>>>>>> 1e3aa97e85c1057f4f3d23d9edc7ab2446a1531f
     else:
         return None
 
@@ -226,6 +243,7 @@ def form_message(result_tuple, vk_address, vk_name, message_id):
         message = 'Команда не корректна'
     else:
         message = 'Аргументы не корректны'
+<<<<<<< HEAD
         
     
     if result_tuple[0] == 'добавить аккаунт' and result_tuple[1] is not None:
@@ -251,6 +269,16 @@ def form_message(result_tuple, vk_address, vk_name, message_id):
             query_example = r'"([\s,\S]+)" (\d+)$'
             old_params = pack_parameters(re.findall(query_example,preprevious_text))
             message = Calculate_Norma(user_id = vk_address, day = day, nick = old_params[0][0],  charm = int(old_params[0][1]), old_point = int(result_tuple[1][0]))
+=======
+
+    # Пример обработки сообщения, содержащего лишь число
+    if result_tuple[0] == 'число':
+        preprevious_text = get_preprevious_text_message(message_id)
+        # preprevious_message_parameters содержит команду и параметры из предпредыдущего сообщения
+        preprevious_message_parameters = recognize_action(preprevious_text)
+        if check_preprevious_text_message(preprevious_text):
+            message = 'число засчитано'
+>>>>>>> 1e3aa97e85c1057f4f3d23d9edc7ab2446a1531f
         else:
             message = 'число ни к чему не относится'
     return message
@@ -270,6 +298,10 @@ def bot_answer(user_action):
     message_response = user_action['updates'][len(user_action['updates']) - 1]
     query_str = message_response['object']['message']['text']
     result_tuple = recognize_action(query_str)
+<<<<<<< HEAD
+=======
+    print(result_tuple)
+>>>>>>> 1e3aa97e85c1057f4f3d23d9edc7ab2446a1531f
     user_id = message_response['object']['message']['from_id']
     user_address_id = get_user_vk_id(user_id)
     user_vk_name = get_vk_name(user_id)
@@ -304,6 +336,7 @@ def server_listening(api_version, group_id, access_token):
             ts = new_ts
 
 
+<<<<<<< HEAD
 # In[4]:
 
 
@@ -321,3 +354,6 @@ server_listening(api_version, group_id, token)
 
 
 
+=======
+server_listening(api_version, group_id, token)
+>>>>>>> 1e3aa97e85c1057f4f3d23d9edc7ab2446a1531f
