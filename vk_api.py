@@ -332,14 +332,15 @@ def bot_answer(user_action):
 =======
 <<<<<<< HEAD
 =======
-    print(result_tuple)
 >>>>>>> 1e3aa97e85c1057f4f3d23d9edc7ab2446a1531f
 >>>>>>> 9ebe525889399bfbb7d7839ff425f858763925a7
     user_id = message_response['object']['message']['from_id']
+    peer_id = message_response['object']['message']['peer_id']
     user_address_id = get_user_vk_id(user_id)
     user_vk_name = get_vk_name(user_id)
     message = form_message(result_tuple, user_address_id, user_vk_name, get_message_id(message_response))
-    send_message(message, user_id)
+    if int(peer_id)  < 2000000000:
+        send_message(message, user_id)
 
 
 def server_listening(api_version, group_id, access_token):
