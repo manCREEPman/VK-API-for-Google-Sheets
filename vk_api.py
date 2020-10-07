@@ -233,12 +233,13 @@ def bot_answer(user_action):
     message_response = user_action['updates'][len(user_action['updates']) - 1]
     query_str = message_response['object']['message']['text']
     result_tuple = recognize_action(query_str)
-    print(result_tuple)
     user_id = message_response['object']['message']['from_id']
+    peer_id = message_response['object']['message']['peer_id']
     user_address_id = get_user_vk_id(user_id)
     user_vk_name = get_vk_name(user_id)
     message = form_message(result_tuple, user_address_id, user_vk_name, get_message_id(message_response))
-    send_message(message, user_id)
+    if int(peer_id) < 2000000000:
+        send_message(message, user_id)
 
 
 def server_listening(api_version, group_id, access_token):
